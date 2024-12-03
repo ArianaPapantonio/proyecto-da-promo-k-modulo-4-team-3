@@ -1,0 +1,54 @@
+{
+  "chart": {
+    "title": "LGBT+ legal equality index",
+    "subtitle": "The index captures to which extent LGBT+ people have the same rights as straight and cisgender people. It combines 15 individual policies, such as the legality of same-sex relationships, marriage, and gender marker changes. It ranges from 0 to 100 (most equal).",
+    "citation": "Equaldex (2024); Population based on various sources (2023)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/lgbt-legal-equality-index?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "Iran",
+      "Afghanistan",
+      "Russia",
+      "Egypt",
+      "Pakistan",
+      "Paraguay",
+      "China",
+      "Venezuela",
+      "Romania",
+      "Peru",
+      "India",
+      "Japan",
+      "United States",
+      "Brazil",
+      "Chile",
+      "Canada",
+      "Spain"
+    ]
+  },
+  "columns": {
+    "Legal equality index": {
+      "titleShort": "Legal equality index",
+      "titleLong": "Legal equality index",
+      "descriptionShort": "The index captures to which extent lesbians, gay, bisexual, transgender and other people outside traditional sexuality and gender categories have the same rights as straight and cisgender people. It ranges from 0 to 100 (most equal).",
+      "descriptionKey": [
+        "The index combines 15 individual policies: the legality of same-sex relationships, marriage, gender marker changes, censorship of LGBT+ issues, gender-affirming care, legal recognition of non-binary gender, LGBT+ discrimination, employment discrimination, housing discrimination, same-sex adoption, serving openly in the military, blood donations by men who have sex with men, conversion therapies, and equal age of consent between same-sex and different-sex partners.",
+        "Each of these policies is weighted differently, with the most important policies receiving the highest weights. These weights are called _total possible scores_.",
+        "Each policy status has a factor associated to it, ranging from o to 1. Higher scores indicate more equality.",
+        "The index is calculated by summing the product of total possible scores and the factor for each policy, divided by the sum of total possible scores.",
+        "For more information about the methodology and the specific scores used, please refers to the [Equaldex Equality index methodology](https://www.equaldex.com/equality-index)."
+      ],
+      "descriptionProcessing": "- We have extracted the data from the official [Equaldex JSON API](https://equaldex.stoplight.io/docs/equaldex/d033e28a5cf0c-equaldex-json-api).\n- We combine the historical and current data extracted from the API to create a time series.\n- Whenever policy implementation dates for a status are not provided in the data, and this status is the only available for the country, we consider that this status has not changed during the entire period of the dataset.\n- We group some of the categories the source has defined for each issue, for further clarity in our visualizations.\n- We present this data only for sovereign states, defined by [Butcher and Griffiths (2020)](https://ourworldindata.org/grapher/sovereign-state-butcher-griffiths). We use the definitions of the latest year available.",
+      "shortUnit": "",
+      "unit": "",
+      "timespan": "2024-2024",
+      "type": "Numeric",
+      "owidVariableId": 931793,
+      "shortName": "ei_legal",
+      "lastUpdated": "2024-06-03",
+      "nextUpdate": "2025-06-03",
+      "citationShort": "Equaldex (2024); Population based on various sources (2023) – with major processing by Our World in Data",
+      "citationLong": "Equaldex (2024); Population based on various sources (2023) – with major processing by Our World in Data. “Legal equality index” [dataset]. Equaldex, “Equaldex”; Various sources, “Population” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/931793.metadata.json"
+    }
+  },
+  "dateDownloaded": "2024-12-03"
+}
